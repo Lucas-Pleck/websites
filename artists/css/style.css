@@ -1,0 +1,523 @@
+:root{
+    --hauteur-menu: 12px;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+body{
+    background-color: white;
+}
+
+.body-container{
+    max-width: 1360px;
+    margin-top:5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.1% 0%;
+}
+
+/*-----nav start------*/
+nav{
+    width: 100%;
+    height: 60px;
+    font-size: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-bottom: 2px solid #C6A53D;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.nav-menu{
+    margin:0 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.nav-brand{
+    margin: 0.3% 20%;
+    font-size: 1.6rem;
+    text-shadow:-1px -1px #c6a63d5e ;
+    position: absolute;
+}
+
+.nav-brand a{
+    font-family: 'handlee';
+}
+
+.nav-brand-nft{
+    color: white;
+    text-shadow:-1px -1px #ffffff96 ;
+    font-size: 1.8rem;
+}
+
+.nav-brand a{
+    color:#C6A53D;
+    font-weight: bold;
+}
+
+.link-menu{
+    display:inline-block;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.menu-no-sub{
+    margin: 0 -50px -4px;
+}
+
+nav > ul{
+    display: flex;
+    text-align: center;
+    height: var(--hauteur-menu);
+    white-space:nowrap;
+}
+  
+nav ul{
+    list-style-type: none;
+}
+  
+nav > ul > li{
+    position: relative;
+    height: 100%;
+    flex: 1;
+    text-transform: uppercase;
+    padding: 0 auto;
+}
+  
+nav > ul > li:hover > a{
+    color: #C6A53D;
+}
+  
+nav > ul > li > a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+li a{
+    text-decoration: none;
+    color: white;
+}
+  
+.link-menu > a:after{
+    font-size: 15px;
+    margin-left: 7px;
+   
+}
+  
+.sub-menu{
+    margin-top: var(--hauteur-menu);
+    margin-left: -36%;
+    width: 110%;
+    overflow: hidden;
+    max-height: 0;
+    border-radius: 3%;
+    background-color: rgba(44, 44, 44, 0.88);
+}
+
+.link-menu:hover > .sub-menu{
+    animation: sub-menu-visible 1s forwards;
+}
+ 
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+
+@keyframes sub-menu-visible{
+    0%{
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+      border-bottom: 3px solid #b29436;
+    }
+    30%{
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+    100%{
+      max-height: 50em;
+      border-bottom: 3px solid #b29436;
+      box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+    }
+}
+  
+.sub-menu > li:hover{
+    background-color: rgba(71, 71, 71, 0.5);
+}
+  
+.sub-menu > li > a{
+    height: 50px;
+    width: 100%;
+}
+  
+.sub-menu > li:hover > a{
+    color: white;
+}
+
+/*------intro------*/
+
+section{
+    margin-bottom: 18vh;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.section-title{
+    text-transform: uppercase;
+    color: #707070;
+    margin: 2% 0;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #b29436;
+}
+
+.section-description{
+    color: black;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.section-citation{
+    color: #b29436;
+    margin: 2% 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/*------artists------*/
+
+.artists{
+    margin: 2% 0%;
+}
+
+.artists-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.artists-profile{
+    margin: 2% auto;
+    background-color: #cfcfcf4f;
+}
+
+.artists-profile a{
+    text-decoration: none;
+    color:black;    
+}
+
+.artists-profile-picture{
+    width: 40rem;
+    height: 25rem;
+}
+
+.artists-name{
+    margin:2% 0% 2% 5%;
+    font-family: handlee;
+    font-size: 2rem;
+}
+
+.artists-denomination{
+    margin:2% 0% 2% 5%;
+}
+
+
+/*------ last artwork------*/
+
+.last-artwork{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.last-artwork img{
+    height: 36vh;
+    margin:1% 0.5%;
+}
+
+
+
+/*------work with us------*/
+
+
+/*------ about------*/
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-description{
+    width: 50%;
+    margin-right: 5%;
+}
+
+.about img{
+    width: 30vw;
+    height: auto; 
+}
+
+.about p{
+text-align: justify;
+}
+
+/*------team------*/
+
+.team-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-profile{
+    margin: 2% 1%;
+    text-align: center;
+}
+
+.team-profile a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.team-profile-picture{
+    width: 16rem;
+    height: 18rem;
+}
+
+.team-name{
+    margin:2% 0% 2% 5%;
+    font-family: 'handlee';
+    font-size: 2rem;
+}
+
+.team-denomination{
+    margin:2% 0% 2% 5%;
+}
+
+
+
+
+
+/*------ARTIST PAGE------*/
+
+/*------hero banner & artist intro------*/
+
+.artist-hero-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.artist-hero-banner img{
+    width: 99vw;
+	height: 60vh;
+	position:absolute;
+	z-index:-1;
+	left: 50%;
+	transform: translatex(-50%);
+	top: 0;
+}
+
+.artist-hero-intro{
+    margin: 30% 2% 5% 5%;
+    display: flex;
+}
+
+.artist-hero-picture{
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.artist-hero-name{
+    margin: 10% 0 0 5%;
+}
+
+.artist-hero-name span{
+    margin: 10% 0 0 5%;
+}
+/*------artist bio------*/
+
+/*------artist collection------*/
+
+.artist-collection{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: flex-start;
+    margin: 0 2%;
+}
+
+.artist-collection-name{
+    text-transform: uppercase;
+    color: #707070;
+    margin: 2% 0;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #b29436;
+}
+
+.artist-collection-description{
+    color: black;
+    font-size: 1.4rem;
+    text-align: left;
+}
+
+.artist-markeplace-flexcontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artist-collection-marketplace{
+    color: #b29436;
+    margin: 2% 0;
+    font-size: 1.4rem;
+}
+
+.artist-market-logo{
+    width: 10rem;
+}
+
+
+.collection-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.collection-item{
+    margin: 2% auto;
+}
+
+.collection-item a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.collection-item-picture{
+    width: 20rem;
+    height: 30rem;
+    border-radius: 10%;
+}
+
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+.btn {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+    box-shadow: inset 0 0 0 50px transparent;
+}
+
+.btn-primary:hover {
+    box-shadow: inset 0 0 0 0 var(--primary);
+}
+
+.btn-secondary:hover {
+    box-shadow: inset 0 0 0 0 var(--secondary);
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+@media screen and (max-width: 1480px){
+
+.nav-menu {
+    position: fixed;
+    left: -200%;
+    top: 4rem;
+    flex-direction: column;
+    
+    background-color: #fff;
+    width: 100vw;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+    left: -60%;
+    
+}
+.nav-item {
+    margin: 2.5rem 0%;
+}   
+.link-menu a, .menu-no-sub a{
+color: black;
+font-size: 1.6rem;
+font-weight: bold;
+}
+.nav-brand{
+    margin-top:-12px;
+}
+.hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 60%;
+    margin-top:20px;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.section-description{
+    font-size: 1.2rem;
+    margin:0 5%
+}
+.artists-row{
+    flex-direction: column;
+}
+.about-description{
+    width: 80%;
+}
+
+.about img{
+    width: 50vw;
+    height: auto; 
+}
+
+}

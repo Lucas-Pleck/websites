@@ -1,0 +1,387 @@
+body{
+    margin: 0;
+    font-family: "Raleway";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size:2rem;
+    text-transform: uppercase;
+    
+}
+
+h2{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+h3{
+    font-size:1.2rem;
+}
+
+h5{
+    font-size: 1rem;
+    color: white;
+}
+
+p{
+    font-size: 1rem;
+}
+
+header{
+    width: 100vw;
+    height: 98vh;
+    background-image: url(img/billboard.jpg);
+    background-size: cover;
+}
+
+header::after{
+    content:"";
+    position: absolute;
+    width: 100vw;
+    height: 5vh;
+    bottom: 0;
+    display: block;
+    background:url(img/shadow.png)
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    height: 400%;
+    width: auto;
+}
+
+ul{
+    width: 24vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+    margin: 0 5%;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link{
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+    border-radius: 5%;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+.hero-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:25vh;
+}
+ .hero-banner h5{
+     margin-top: -2vh;
+ }
+
+ .hero-separator{
+    width: 2vw;
+    border-bottom: 1px solid white;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service{
+    width: 18vw;
+    text-align: center;
+    line-height: 180%;
+    margin: 0 3%;
+}
+
+.img-services{
+    background-image: url(img/video.jpg);
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    color: white;
+}
+
+.img-services img{
+    margin: 0.5% 0%;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.testimonials-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+.testimonial{
+    margin:0% 5%;
+}
+
+.testimonials-profile img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.testimonials-profile{
+    display: flex;
+    width: 14rem;
+    margin-bottom: 20%;
+}
+
+.testimonial-name-job{
+    margin-top: -6%;
+    margin-left: 5%;
+}
+
+.test-lign{
+    border-top: 1px solid black;
+    width: 14rem;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.testimonial-name{
+    font-weight: bold;
+}
+
+.testimonial-job{
+    font-size: 0.8rem;
+}
+
+.recent-posts{
+    background-color: rgb(235, 231, 231);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recent-posts-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recent-post{
+    margin:5% 1%
+}
+
+.recent-post-date{
+    position: absolute;
+    color: white;
+    background-color: rgba(94, 94, 94, 0.808);
+    height:3rem;
+    width: 3rem;
+    margin-top:-24.1vh;
+    margin-left: 3vh;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.subscribe{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+    background-color: white;
+}
+
+.subscribe-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+button{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 5%;
+    margin-top: 4%;
+    background-color: crimson;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+}
+
+footer{
+    display:flex;
+    background-color:rgb(235, 231, 231);
+    height: 20rem;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer img{
+    width: 5rem;
+    height: 2rem;
+}
+
+footer li{
+    color:black;
+}
+
+footer li a{
+    color: black;
+}
+
+footer li a:hover{
+    color: white;
+}
+
+@media screen and (max-width: 960px){
+    .services-container{
+        flex-direction: column;
+    }
+    .service{
+        width: 40vw;
+        line-height: 150%;
+        margin: 0 3%;
+    }
+    .testimonials-container{
+        flex-direction: column;
+        width: 90vw;
+    }
+    .testimonial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .recent-posts-container{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer li{
+        margin: 0 5%
+    }
+    footer img{
+        width: 5rem;
+        height: 2rem;
+        margin-top: 2%;
+    }
+    h1{
+        margin-top: 20%;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -150%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100vw;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+    .nav-menu.active {
+        left: 0;
+        
+}
+
+    .nav-item {
+        margin: 2.5rem 0;
+}   
+    .nav-link{
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+    .hamburger {
+        display: block;
+        cursor: pointer;
+}
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+}
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+}
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+}
+}
