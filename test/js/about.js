@@ -1,3 +1,7 @@
+
+import * as THREE from 'three';
+import GLTFLoader from "threejs/GLTFLoader.js";
+
 var theModel;
 
 const MODEL_PATH = "img/avatar.glb";
