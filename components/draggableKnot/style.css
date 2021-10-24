@@ -1,0 +1,58 @@
+body{
+    background-color: #26292f;
+  }
+  #knobBG, #knob {
+    position:absolute;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/knob_Base.png');
+    width:355px; 
+    height:355px;
+  }
+  #description {
+    font-size:20px;
+  }
+  #knob {
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/knob_Spinner.png');
+    z-index: 1;
+  }
+  .box {
+    font-size:30px;
+    padding: 10px;
+  }
+  #content .box {
+    
+    height: 335px;
+  }
+  #content{
+    position:absolute;
+    left:400px;
+    height:355px;
+    width:500px;
+    overflow: scroll;
+  }
+  .box1{
+    background-color: #88b6f7;
+  }
+  .box2{
+    background-color: #9a9bff;
+  }
+  .box3{
+    background-color: #bbfb94;
+  }
+  .box4{
+    background-color: #ed74c4;
+  }
+  .box5{
+    background-color: #eb984e;
+  }
+  .box6{
+    background-color: #a9eaf1;
+  }
+  .box7{
+    background-color: #dcecf1;
+  }
+  .box8{
+    background-color: pink;
+  }
+  .box9{
+    background-color: purple;
+  }

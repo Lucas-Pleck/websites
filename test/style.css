@@ -78,11 +78,39 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.750);
-    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
     height: 4rem;
     width: 100vw;
     z-index: 1000;
-    border-bottom: 2px solid var(--main-color);
+}
+
+.nav-border{
+  position: fixed;
+  content: "";
+  box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.3);
+  top: 0rem;
+  left: calc(-1 * var(--border-width));
+  z-index: 999;
+  width: 100vw;
+  height: 4.22rem;
+  background: linear-gradient(
+        60deg,
+        hsl(48, 45%, 32%),
+        hsl(48, 45%, 32%),
+        hsl(48, 45%, 32%),
+        hsl(48, 45%, 37%),
+        hsl(48, 45%, 37%),
+        hsl(48, 45%, 37%),
+        hsl(48, 45%, 61%),
+        hsl(48, 45%, 47%),
+        hsl(48, 45%, 47%),
+        hsl(48, 45%, 47%),
+        hsl(48, 45%, 47%),
+        hsl(48, 46%, 52%)
+      );
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      border-radius: calc(2 * var(--border-width));
+      animation: moveGradient 4s alternate infinite;
 }
 
 #hero h1{
@@ -635,63 +663,20 @@ section{
 	height: 321px;
 	position:absolute;
 	left:45px;
-	top:179px;
-
+	top:129px;
 	-webkit-animation: rotate-back 24000ms linear infinite;
 	-moz-animation: rotate-back 24000ms linear infinite;
 	-ms-animation: rotate-back 24000ms linear infinite;
 	animation: rotate-back 24000ms linear infinite;
 }
-#shadow15{
-	width:306px;
-	height:306px;
-	-webkit-border-radius:153px;
-	-moz-border-radius:153px;
-	border-radius:153px;
-	position:absolute;
-	left:52px;
-	top:186px;
-}
+
 #gear14{
 	background: url(img/gears-anim2.png) no-repeat 0 -856px;
 	width: 87px;
 	height: 87px;
 	position:absolute;
-	left:162px;
-	top:296px;
-}
-#shadow14{
-	width:70px;
-	height:70px;
-	-webkit-border-radius:35px;
-	-moz-border-radius:35px;
-	border-radius:35px;
-	position:absolute;
-	left:171px;
-	top:304px;
-}
-#gear13{
-	background: url(img/gears-anim2.png) no-repeat 0 -744px;
-	width: 62px;
-	height: 62px;
-	position:absolute;
-	left:174px;
-	top:309px;
-
-	-webkit-animation: rotate 8000ms linear infinite;
-	-moz-animation: rotate 8000ms linear infinite;
-	-ms-animation: rotate 8000ms linear infinite;
-	animation: rotate 8000ms linear infinite;
-}
-#shadow13{
-	width:36px;
-	height:36px;
-	-webkit-border-radius:18px;
-	-moz-border-radius:18px;
-	border-radius:18px;
-	position:absolute;
-	left:187px;
-	top:322px;
+	left:166px;
+	top:246px;
 }
 
 /*gear-system-2*/
@@ -702,7 +687,6 @@ section{
 	position:absolute;
 	left:125px;
 	top:40px;
-
 	-webkit-animation: rotate-back 8000ms linear infinite;
 	-moz-animation: rotate-back 8000ms linear infinite;
 	-ms-animation: rotate-back 8000ms linear infinite;
@@ -716,21 +700,10 @@ section{
 	position:absolute;
 	left:144px;
 	top:59px;
-
 	-webkit-animation: rotate 10000ms linear infinite;
 	-moz-animation: rotate 10000ms linear infinite;
 	-ms-animation: rotate 10000ms linear infinite;
 	animation: rotate 10000ms linear infinite;
-}
-#shadow3{
-	width:60px;
-	height:60px;
-	-webkit-border-radius:30px;
-	-moz-border-radius:30px;
-	border-radius:30px;
-	position:absolute;
-	left:160px;
-	top:131px;
 }
 
 /*gear-system-12*/
@@ -741,7 +714,6 @@ section{
 	position:absolute;
 	left:860px;
 	top:70px;
-
 	-webkit-animation: rotate-back 8000ms linear infinite;
 	-moz-animation: rotate-back 8000ms linear infinite;
 	-ms-animation: rotate-back 8000ms linear infinite;
@@ -755,21 +727,10 @@ section{
 	position:absolute;
 	left:880px;
 	top:90px;
-
 	-webkit-animation: rotate 10000ms linear infinite;
 	-moz-animation: rotate 10000ms linear infinite;
 	-ms-animation: rotate 10000ms linear infinite;
 	animation: rotate 10000ms linear infinite;
-}
-#shadow13{
-	width:60px;
-	height:60px;
-	-webkit-border-radius:30px;
-	-moz-border-radius:30px;
-	border-radius:30px;
-	position:absolute;
-	left:160px;
-	top:131px;
 }
 
 /*gear-system-3*/
@@ -780,22 +741,12 @@ section{
 	position:absolute;
 	left:197px;
 	top:96px;
-
 	-webkit-animation: rotate 12000ms linear infinite;
 	-moz-animation: rotate 12000ms linear infinite;
 	-ms-animation: rotate 12000ms linear infinite;
 	animation: rotate 12000ms linear infinite;
 }
-#shadow9{
-	width:200px;
-	height:200px;
-	-webkit-border-radius:100px;
-	-moz-border-radius:100px;
-	border-radius:100px;
-	position:absolute;
-	left:214px;
-	top:113px;
-}
+
 #gear7{
 	background: url(img/gears-anim2.png) no-repeat -371px 0;
 	width: 108px;
@@ -803,21 +754,10 @@ section{
 	position:absolute;
 	left:260px;
 	top:159px;
-
 	-webkit-animation: rotate-back 10000ms linear infinite;
 	-moz-animation: rotate-back 10000ms linear infinite;
 	-ms-animation: rotate-back 10000ms linear infinite;
 	animation: rotate-back 10000ms linear infinite;
-}
-#shadow7{
-	width:76px;
-	height:76px;
-	-webkit-border-radius:38px;
-	-moz-border-radius: 38px;
-	border-radius: 38px;
-	position:absolute;
-	left:276px;
-	top:175px;
 }
 
 /*gear-system-2-3*/
@@ -828,22 +768,12 @@ section{
 	position:absolute;
 	left:652px;
 	top:90px;
-
 	-webkit-animation: rotate 12000ms linear infinite;
 	-moz-animation: rotate 12000ms linear infinite;
 	-ms-animation: rotate 12000ms linear infinite;
 	animation: rotate 12000ms linear infinite;
 }
-#shadow19{
-	width:200px;
-	height:200px;
-	-webkit-border-radius:100px;
-	-moz-border-radius:100px;
-	border-radius:100px;
-	position:absolute;
-	left:670px;
-	top:110px;
-}
+
 #gear17{
 	background: url(img/gears-anim2.png) no-repeat -371px 0;
 	width: 108px;
@@ -851,21 +781,10 @@ section{
 	position:absolute;
 	left:714px;
 	top:150px;
-
 	-webkit-animation: rotate-back 10000ms linear infinite;
 	-moz-animation: rotate-back 10000ms linear infinite;
 	-ms-animation: rotate-back 10000ms linear infinite;
 	animation: rotate-back 10000ms linear infinite;
-}
-#shadow17{
-	width:76px;
-	height:76px;
-	-webkit-border-radius:38px;
-	-moz-border-radius: 38px;
-	border-radius: 38px;
-	position:absolute;
-	left:736px;
-	top:170px;
 }
 
 /*gear-system-4*/
@@ -874,23 +793,12 @@ section{
 	width: 134px;
 	height: 134px;
 	position:absolute;
-	left:545px;
-	bottom:204px;
-
+	left:560px;
+	bottom:206px;
 	-webkit-animation: rotate-back 10000ms linear infinite;
 	-moz-animation: rotate-back 10000ms linear infinite;
 	-ms-animation: rotate-back 10000ms linear infinite;
 	animation: rotate-back 10000ms linear infinite;
-}
-#shadow6{
-	width:98px;
-	height:98px;
-	-webkit-border-radius:49px;
-	-moz-border-radius: 49px;
-	border-radius: 49px;
-	position:absolute;
-	left:5540px;
-	bottom:230px;
 }
 #gear4{
 	background: url(img/gears-anim2.png) no-repeat 0 -1627px;
@@ -898,8 +806,7 @@ section{
 	height: 69px;
 	position:absolute;
 	left:54px;
-	bottom:388px;
-
+	bottom:414px;
 	-webkit-animation: rotate-back 10000ms linear infinite;
 	-moz-animation: rotate-back 10000ms linear infinite;
 	-ms-animation: rotate-back 10000ms linear infinite;
@@ -920,16 +827,7 @@ section{
 	-ms-animation: rotate 8000ms linear infinite;
 	animation: rotate 8000ms linear infinite;
 }
-#shadow12{
-	width:124px;
-	height:124px;
-	-webkit-border-radius:62px;
-	-moz-border-radius:62px;
-	border-radius:62px;
-	position:absolute;
-	left:430px;
-	bottom:282px;
-}
+
 #gear11{
 	background: url(img/gears-anim2.png) no-repeat 0 -356px;
 	width: 125px;
@@ -943,16 +841,6 @@ section{
 	-ms-animation: rotate-back 10000ms linear infinite;
 	animation: rotate-back 10000ms linear infinite;
 }
-#shadow11{
-	width:88px;
-	height:88px;
-	-webkit-border-radius:44px;
-	-moz-border-radius:44px;
-	border-radius:44px;
-	position:absolute;
-	left:447px;
-	bottom:294px;
-}
 
 /*gear-system-15*/
 #gear112{
@@ -962,22 +850,12 @@ section{
 	position:absolute;
 	left:790px;
 	bottom:200px;
-
 	-webkit-animation: rotate 8000ms linear infinite;
 	-moz-animation: rotate 8000ms linear infinite;
 	-ms-animation: rotate 8000ms linear infinite;
 	animation: rotate 8000ms linear infinite;
 }
-#shadow112{
-	width:124px;
-	height:124px;
-	-webkit-border-radius:62px;
-	-moz-border-radius:62px;
-	border-radius:62px;
-	position:absolute;
-	left:810px;
-	bottom:226px;
-}
+
 #gear111{
 	background: url(img/gears-anim2.png) no-repeat 0 -356px;
 	width: 125px;
@@ -985,23 +863,11 @@ section{
 	position:absolute;
 	left:810px;
 	bottom:222px;
-
 	-webkit-animation: rotate-back 10000ms linear infinite;
 	-moz-animation: rotate-back 10000ms linear infinite;
 	-ms-animation: rotate-back 10000ms linear infinite;
 	animation: rotate-back 10000ms linear infinite;
 }
-#shadow111{
-	width:88px;
-	height:88px;
-	-webkit-border-radius:44px;
-	-moz-border-radius:44px;
-	border-radius:44px;
-	position:absolute;
-	left:828px;
-	bottom:244px;
-}
-
 
 /*gear1*/
 #gear1{
@@ -1009,23 +875,12 @@ section{
 	width: 135px;
 	height: 134px;
 	position:absolute;
-	left:83px;
-	bottom:221px;
-
+	left:483px;
+	top:80px;
 	-webkit-animation: rotate-back 10000ms linear infinite;
 	-moz-animation: rotate-back 10000ms linear infinite;
 	-ms-animation: rotate-back 10000ms linear infinite;
 	animation: rotate-back 10000ms linear infinite;
-}
-#shadow1{
-	width:96px;
-	height:96px;
-	-webkit-border-radius:48px;
-	-moz-border-radius:48px;
-	border-radius:48px;
-	position:absolute;
-	left:103px;
-	bottom:240px;
 }
 
 /*gear-system-6*/
@@ -1036,30 +891,19 @@ section{
 	position:absolute;
 	left:22px;
 	top:108px;
-
 	-webkit-animation: rotate 10000ms linear infinite alternate;
 	-moz-animation: rotate 10000ms linear infinite alternate;
 	-ms-animation: rotate 10000ms linear infinite alternate;
 	animation: rotate 10000ms linear infinite alternate;
 }
-#shadow5{
-	width:96px;
-	height:96px;
-	-webkit-border-radius:48px;
-	-moz-border-radius:48px;
-	border-radius:48px;
-	position:absolute;
-	left:41px;
-	top:127px;
-}
+
 #gear2{
 	background: url(img/gears-anim2.png) no-repeat 0 -1364px;
 	width: 80px;
 	height: 79px;
 	position:absolute;
-	left:380px;
-	top:286px;
-
+	left:600px;
+	top:80px;
 	-webkit-animation: rotate-back 10000ms linear infinite alternate;
 	-moz-animation: rotate-back 10000ms linear infinite alternate;
 	-ms-animation: rotate-back 10000ms linear infinite alternate;
@@ -1074,19 +918,6 @@ section{
 	position:absolute;
 	left:1px;
 	bottom:300px;
-
-	-webkit-animation: up 10000ms linear infinite alternate;
-	-moz-animation: up 10000ms linear infinite alternate;
-	-ms-animation: up 10000ms linear infinite alternate;
-	animation: up 10000ms linear infinite alternate;
-}
-#shadowweight{
-	width:10px;
-	height:80px;
-	position:absolute;
-	left:12px;
-	bottom:0px;
-
 	-webkit-animation: up 10000ms linear infinite alternate;
 	-moz-animation: up 10000ms linear infinite alternate;
 	-ms-animation: up 10000ms linear infinite alternate;
@@ -1364,7 +1195,7 @@ section{
 }
 
 .column { 
-  width: 10rem;
+  width: 16rem;
   display: none;
   margin:0.8rem 0.8rem;
   align-self: center;
@@ -1373,7 +1204,6 @@ section{
 
 .content {
   padding: 8px 8px 0px 8px;
-  border-radius: 2%;
 }
 
 .show {
@@ -1389,7 +1219,6 @@ section{
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin:1rem auto;
 }
 
 .btn span{
@@ -1420,30 +1249,33 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 10rem;
-    height: 13.1rem;
+    width: 14rem;
+    height: 14rem;
+    margin: 0 auto;
 }
 
 .skills .content h4{
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 1px 1px 0 var(--main-color);
+    font-size: 1rem;
     margin: 1rem auto;
-    text-shadow: 1px px 0 var(--complementary-color);
-    font-size: .7rem;
 }
 
 .skills .content img{
-    width: 10rem;
-    height: 9.86rem;
-  
+    width: 11rem;
+    height: 11rem;
+    margin: 0 auto;
 }
 
 .flip-box {
     background-color: transparent;
-    width: 10rem;
+    width: 12rem;
     height: 18rem;
     /*border: 1px solid var(--complementary-color);*/
     perspective: 1000px; 
+    margin: 0 auto;
 }
   
 .flip-box-inner {
@@ -1882,6 +1714,20 @@ time {
 .about-flex {
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-flex div{
+  width: 100%;
+  height: 100%;
+}
+
+#c {
+  width: 30vw;
+  height: 30vw;
+  display: block;
+
 }
 
 
@@ -2058,20 +1904,17 @@ button img{
 }
 
 #sidebar .social img{
-  width: 2rem;
+  width: 4rem;
   height: auto;
-  border-radius: 0%;
+  border-radius: 5%;
   padding:1rem;
-  background-color: white;
   margin: 0 1rem;
+  box-shadow: 0 2px 5px #000000;
 }
 
 
 #sidebar .social img:hover{
-  width: 2rem;
-  height: auto;
-  padding:1.1rem;
-  background-color: var(--main-color-trans);
+  box-shadow: 0 0px 1px #000000;
 }
 
 #sidebar li .mail-hover{
@@ -2096,7 +1939,21 @@ button img{
         width: 100%;
 }
 
+#sidebar button{
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  height: auto;
+  border-radius: 5%;
+  padding:1rem;
+  margin: 0 auto;
+  box-shadow: 0 2px 5px #000000a6;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
 
+#sidebar button:hover{
+  box-shadow: 0 0px 2px #000000a6;
+}
 
 .gears-container{
   position: relative;
