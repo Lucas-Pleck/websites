@@ -120,7 +120,6 @@ nav{
     font-weight: 500;
     letter-spacing: 4px;
     white-space: nowrap;
-    translate: 40% 50%;
     color:#ffffff;
 }
 
@@ -622,15 +621,15 @@ section{
     inset 4px 4px 6px rgba(0, 0, 0, 0.2);
   color: yellow;
   text-shadow: 0 0 15px yellow, 0 0 25px yellow;
-  animation: glow 10s linear infinite;
+  animation: glow 8s linear infinite;
 }
 
 @keyframes glow {
   0% {
-    filter: hue-rotate(120deg);
+    filter: hue-rotate(0deg);
   }
   100% {
-    filter: hue-rotate(180deg);
+    filter: hue-rotate(16deg);
   }
 }
 
@@ -805,7 +804,7 @@ section{
 	height: 69px;
 	position:absolute;
 	left:54px;
-	bottom:414px;
+	bottom:386px;
 	-webkit-animation: rotate-back 10000ms linear infinite;
 	-moz-animation: rotate-back 10000ms linear infinite;
 	-ms-animation: rotate-back 10000ms linear infinite;
@@ -1290,8 +1289,7 @@ section{
     transform: rotateY(180deg);
 }
 
-.flip-box-front,
-.flip-box-back {
+.flip-box-front{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1299,8 +1297,18 @@ section{
 }
 
 .flip-box-back {
-    background-color: #13315c;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    backface-visibility: hidden;
+    top:-50%;
+    left:-50%;
+}
+
+.flip-box-back {
+    background-color: #ffffff;
     transform: rotateY(180deg);
+    box-shadow: 0px 2px 4px #000000b4;
     border-radius: 5%;
 }
 
@@ -1337,6 +1345,119 @@ section{
     margin:4rem auto;
     padding: 1%;
 }
+#career input{
+  background-color: #ffffff;
+  width: 6rem;
+  height: 1.4rem;
+  border-radius: 5%;
+  padding: 0.2rem;
+  box-shadow: 0 1px 1px #000000;
+  text-transform: uppercase;
+  color:var(--secondary-color);
+  font-weight: bold;
+  font-size: 0.7rem;
+  margin: 1rem 0;
+}
+
+#divMsg{
+ height: 100%; 
+ width: 100%; 
+ display:none;
+ position: absolute;
+ top:9.2rem;
+ left:0;
+ text-align: justify;
+}
+
+#divMsg2{
+  height: 140%; 
+  width: 100%; 
+  display:none;
+  position: absolute;
+  top:9.2rem;
+  left:0;
+  text-align: justify;
+ }
+
+ #divMsg3{
+  height: 140%; 
+  width: 100%; 
+  display:none;
+  position: absolute;
+  top:9.2rem;
+  left:0;
+  text-align: justify;
+ }
+
+ #divMsg4{
+  height: 100%; 
+  width: 100%; 
+  display:none;
+  position: absolute;
+  top:9.2rem;
+  left:0;
+  text-align: justify;
+ }
+
+ #divMsg5{
+  height: 74%; 
+  width: 100%; 
+  display:none;
+  position: absolute;
+  top:11rem;
+  left:0;
+  text-align: justify;
+ }
+
+ #divMsg6{
+  height: 74%; 
+  width: 100%; 
+  display:none;
+  position: absolute;
+  top:11rem;
+  left:0;
+  text-align: justify;
+ }
+
+ #divMsg7{
+  height: 64%; 
+  width: 100%; 
+  display:none;
+  position: absolute;
+  top:11rem;
+  left:0;
+  text-align: justify;
+ }
+
+ #divMsg8{
+  height: 156%; 
+  width: 100%; 
+  display:none;
+  position: absolute;
+  top:9.2rem;
+  left:0;
+  text-align: justify;
+ }
+
+ #divMsg9{
+  height: 110%; 
+  width: 100%; 
+  display:none;
+  position: absolute;
+  top:11rem;
+  left:0;
+  text-align: justify;
+ }
+
+ #divMsg10{
+  height: 70%; 
+  width: 100%; 
+  display:none;
+  position: absolute;
+  top:7.4rem;
+  left:0;
+  text-align: justify;
+ }
 
 .timeline ul li {
   list-style-type: none;
@@ -1345,7 +1466,6 @@ section{
   margin: 0 auto;
   padding-top: 10px;
   background: rgb(0, 0, 0);
-  text-align: justify;
 }
 
 .timeline ul li::after {
@@ -1380,6 +1500,8 @@ section{
     background: var(--main-color);
     border-radius: var(--border-width);
     opacity: 0.4;
+    height: 16rem;
+    margin:.6rem auto;
 } 
 
 .timeline ul li.in-view div{
@@ -1433,17 +1555,19 @@ section{
 
 time{
     color:#324b4d;
+    font-size: 4rem;
+    text-shadow: 0 1px 1px var(--main-color);
 }
 
 job{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-family: "title";
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.692);
     color:var(--main-color)
 }
 
 company{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 .timeline ul li div::before {

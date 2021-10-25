@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body id="home" onload="load()">
+    <header id="hero">
+        <nav>
+            <h1>Lucas Pleckspaen</h1>           
+            <div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="#home">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills-nav">skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#career-nav">career</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio-nav">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-nav">about me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-border"></div>
+    </header>
+
+        <div class="main-content">
+            <div id="spcontainer" class="sp-container" onclick="stopwelcome()">
+                <div class="sp-content">
+                    <div class="sp-globe"></div>
+                    <h2 class="frame-1">looking for a new devops partner?</h2>
+                    <h2 class="frame-2">from marketing to it</h2>
+                    <h2 class="frame-3">through sales and team management</h2>
+                    <h2 class="frame-4">ready for the next</br>challenge!</h2>
+                    <h2 class="frame-5">
+                        <span>technical skills downloaded...</span></br>
+                        <span>click on the container to enter</span></br>
+                    </h2>
+                    <img src="img/kubernetes.png" alt="">
+                </div>
+            </div>
+            <div class="hero-banner" onclick="opendoor()">
+                <div id="ldoor" class="door" ></div>
+                <div id="rdoor" class="door" ></div>
+            </div>
+
+
+<canvas id="c"></canvas>
+
+<h2 class="frame-1">looking for a new devops partner?</h2>
+                    <h2 class="frame-2">from marketing to it</h2>
+                    <h2 class="frame-3">through sales and team management</h2>
+                    <h2 class="frame-4">ready for the next</br>challenge!</h2>
+
+
+<script src='https://unpkg.com/three@0.127.0/build/three.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
+<script src='https://threejs.org/examples/js/controls/OrbitControls.js'></script>
+<script src='main.js'></script>
+
+</body>
+</html>
