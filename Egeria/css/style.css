@@ -51,6 +51,7 @@ nav a{
     color: black;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
+    text-transform: uppercase;
 }
 
 nav a:hover{
@@ -58,13 +59,18 @@ nav a:hover{
     border-bottom: 2px solid gold;
 }
 
+.sub-menu{
+    display: inline-block;
+}
+
 .sub-items{
     display: none;
     box-shadow: 0px 1px 2px #CCC;
     background-color: white;
     position: absolute;
-    width: 100%;
+    width:14rem;
     z-index: 1000;
+    margin: 0 auto;
 }
 nav > ul li:hover .sub-items{
     display: block;
