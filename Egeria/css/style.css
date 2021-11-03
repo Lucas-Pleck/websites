@@ -9,7 +9,7 @@ body{
     height: 100%;
 }
 
-ul, li, a {
+ul, li, a, div, section{
     list-style: none;
     text-decoration: none;
     padding: 0;
@@ -18,12 +18,27 @@ ul, li, a {
 
 /*-----------------NAV-MENU-----------------*/
 
-nav{
+header{
     width: 100%;
+    height: 10vh;
     margin: 0 auto;
     position: sticky;
     top: 0px;
-;
+    z-index: 1000;
+}
+
+nav{
+    width: 90%;
+    height: 100%;
+    margin:auto auto;
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul{
@@ -48,15 +63,35 @@ nav ul::after{
 nav a{
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+nav li::after {
+    content:"";
+    border-bottom: 2px solid gold;
+    right: 100%;
+    position: absolute;
+    transition: all .5s ease-in-out;
+    width: 0%;
+}
+
+nav li:hover::after {
+    left: 0;
+    width: 100%;
 }
 
 nav a:hover{
     color: orange;
-    border-bottom: 2px solid gold;
+}
+
+nav a img{
+   width: 10rem;
+   height: auto;
 }
 
 .sub-menu{
@@ -66,7 +101,7 @@ nav a:hover{
 .sub-items{
     display: none;
     box-shadow: 0px 1px 2px #CCC;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.2);
     position: absolute;
     width:14rem;
     z-index: 1000;
@@ -89,11 +124,82 @@ nav > ul li:hover .sub-items{
     background-color: RGBa(200,200,200,0.1);
 }
 .sub-menu > a::after{
-    content:" ▼";
+    content:" ⮛";
     font-size: 12px;
 }
 
 .logo-nav{
-    margin: 0 15% 0 2%;
+    margin-right: 25%;
     font-size: 2rem;
+}
+
+
+/*--------------------------------------------------------------------------
+                                BANNER
+--------------------------------------------------------------------------*/
+#banner{
+    margin-top: -10vh;
+}
+
+.banner-container{
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+}
+
+/*--------------------------------------------------------------------------
+                                AGENCE
+--------------------------------------------------------------------------*/
+.agence-container{
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+}
+
+/*--------------------------------------------------------------------------
+                                SITES
+--------------------------------------------------------------------------*/
+.sites-container{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+
+/*--------------------------------------------------------------------------
+                                E-MARKETING
+--------------------------------------------------------------------------*/
+.emarketing-container{
+    width: 100%;
+    height: 100vh;
+    background-color: yellowgreen;
+}
+
+
+/*--------------------------------------------------------------------------
+                                FORMATIONS
+--------------------------------------------------------------------------*/
+.formations-container{
+    width: 100%;
+    height: 100vh;
+    background-color:tomato;
+}
+
+
+/*--------------------------------------------------------------------------
+                                REFERENCES
+--------------------------------------------------------------------------*/
+.references-container{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+/*--------------------------------------------------------------------------
+                                CONTACT
+--------------------------------------------------------------------------*/
+.contact-container{
+    width: 100%;
+    height: 100vh;
+    background-color:sienna;
 }
