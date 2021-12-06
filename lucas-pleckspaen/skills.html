@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lucas Pleckspaen Resume</title>
+</head>
+<body>
+
+<!----------------------------------------------------------------------------------------------------------------
+                                            NAV
+------------------------------------------------------------------------------------------------------------------>
+    <header id="hero">
+        <nav>
+            <h1>Lucas Pleckspaen</h1>           
+            <div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skills.html">skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="career.html">career</a></li>
+                    <li class="nav-item"><a class="nav-link" href="src/portfolio.html">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+        <div class="nav-border"></div>
+    </header>
+
+<!----------------------------------------------------------------------------------------------------------------
+                                            SKILLS
+------------------------------------------------------------------------------------------------------------------>
+<section id="skills">
+    <div class="title">
+        <h2>skills</h2>                        
+    </div>
+
+    <div class="skills">
+        <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('softskills')">Soft Skills</button>
+        <button class="btn" onclick="filterSelection('hardskills')">Hard Skills</button>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+
+
+            <div class="column softskills">
+                <div class="content">
+                    <img src="/lucas-pleckspaen/img/skills/team-management.png" alt="" style="width:100%">
+                    <p>Team Management</p>
+                </div>
+            </div>
+
+
+        <div class="column softskills">
+            <div class="content">
+                <img src="/lucas-pleckspaen/img/skills/communication.png" alt="" style="width:100%">
+                <p>Communication</p>
+            </div>
+        </div>
+        <div class="column softskills">
+            <div class="content">
+                <img src="/lucas-pleckspaen/img/skills/self-learning.png" alt="" style="width:100%">
+                <p>Self Learning</p>
+            </div>
+        </div>
+        <div class="column softskills">
+            <div class="content">
+                <img src="/lucas-pleckspaen/img/skills/share-knowledges.png" alt="" style="width:100%">
+                <p>Sharing Knowledges</p>
+            </div>
+        </div>
+        <div class="column softskills">
+            <div class="content">
+                <img src="/lucas-pleckspaen/img/skills/agility.png" alt="" style="width:100%">
+                <p>Flexibility</p>
+            </div>
+        </div>
+        <div class="column softskills">
+            <div class="content">
+                <img src="/lucas-pleckspaen/img/skills/decisiveness.png" alt="" style="width:100%">
+                <p>Decisiveness</p>
+            </div>
+        </div>
+
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-scrum">
+                    <img src="/lucas-pleckspaen/img/skills/agile-scrum.png" alt="Agile & Scrum" style="width:100%">
+                    <p>Agile & Scrum</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-scrum">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Agile & Scrum</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                 </div>
+             </div>
+        </div>
+
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-Automation">
+                    <img src="/lucas-pleckspaen/img/skills/automation.png" alt="Automation" style="width:100%">
+                    <p>Automation</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-Automation">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Automation</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                 </div>
+             </div>
+        </div>
+
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-code-management">
+                    <img src="/lucas-pleckspaen/img/skills/code-management.png" alt="Code Management" style="width:100%">
+                    <p>Code Management</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-code-management">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Code Management</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                 </div>
+             </div>
+        </div>
+       
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-code">
+                    <img src="/lucas-pleckspaen/img/skills/code-languages.png" alt="code languages" style="width:100%">
+                    <p>Code Languages</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-code">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Code Languages</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                    <input id="opentab1" type="radio" name="modaltabs" checked="checked"/>
+                    <label for="opentab1">HTML/CSS</label>
+                    <input id="opentab2" type="radio" name="modaltabs"/>
+                    <label for="opentab2">JAVASCRIPT</label>
+                    <input id="opentab3" type="radio" name="modaltabs"/>
+                    <label for="opentab3">JAVA</label>
+                    <input id="opentab4" type="radio" name="modaltabs"/>
+                    <label for="opentab4">PYTHON</label>
+                    <ul class="tab-list">
+                        <li class="modal-tab tab1"><p>Tab 1 Content</p></li>
+                        <li class="modal-tab tab2"><p>Tab 2 Content</p></li>
+                        <li class="modal-tab tab3"><p>Tab 3 Content</p></li>
+                        <li class="modal-tab tab4"><p>Tab 4 Content</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-integration">
+                    <img src="/lucas-pleckspaen/img/skills/intergration.png" alt="Integration" style="width:100%">
+                    <p>Integration</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-integration">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Integration</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-iaas">
+                    <img src="/lucas-pleckspaen/img/skills/infra-as-code.png" alt="IAAS" style="width:100%">
+                    <p>IAAS</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-iaas">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>IAAS</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-containers">
+                    <img src="/lucas-pleckspaen/img/skills/containers.png" alt="Containers" style="width:100%">
+                    <p>Containers</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-containers">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Containers</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                </div>
+            </div>
+        </div>
+   
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-cloud">
+                    <img src="/lucas-pleckspaen/img/skills/cloud.png" alt="cloud" style="width:100%">
+                    <p>Cloud</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-cloud">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>cloud</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                 </div>
+             </div>
+        </div>
+        
+
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-os">
+                    <img src="/lucas-pleckspaen/img/skills/operating-systems.png" alt="operating systems" style="width:100%">
+                    <p>Operating Systems</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-os">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Operating Systems</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                 </div>
+             </div>
+        </div>
+        
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-hardware">
+                    <img src="/lucas-pleckspaen/img/skills/hardware.png" alt="hardware" style="width:100%">
+                    <p>Hardware</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-hardware">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Hardware</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                 </div>
+             </div>
+        </div>
+
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-marketing">
+                    <img src="/lucas-pleckspaen/img/skills/code-languages.png" alt="marketing" style="width:100%">
+                    <p>Marketing</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-marketing">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Marketing</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                 </div>
+             </div>
+        </div>
+
+        <div class="column hardskills">
+            <div class="content">
+                <a class="modal-open" href="#modal-tabbed-sales">
+                    <img src="/lucas-pleckspaen/img/skills/sales.png" alt="sales" style="width:100%">
+                    <p>Sales</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal" id="modal-tabbed-sales">
+            <div class="modal-content">
+                <a href="#" class="modal-close" title="Close Modal">X</a>
+                <h3>Sales</h3>
+                <div class="modal-area">
+                    <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+                 </div>
+             </div>
+        </div>
+        <!-- END GRID -->
+        </div>
+    </div>
+    <footer>
+        <p>© 2021 All rights reserved. Designed by Lucas Pleckspaen</p>
+    </footer>
+</section>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="/lucas-pleckspaen/js/skills.js"></script>
+</body>
+</html>

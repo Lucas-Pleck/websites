@@ -1,4 +1,4 @@
-var shows = document.querySelectorAll(".show");
+var shows = document.querySelectorAll(".show-career");
 var infos = document.querySelectorAll(".info");
 var accordions = document.querySelectorAll(".accordion");
 

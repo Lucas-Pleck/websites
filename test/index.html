@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        
+    <a class="modal-open" href="#modal">Click To Open Regular Modal</a>
+
+    <a class="modal-open" href="#modal-tabbed">Click To Open Tabbed Modal</a>
+
+    <div class="modal" id="modal">
+    <div class="modal-content">
+        <a href="#" class="modal-close" title="Close Modal">X</a>
+        <h3>Modal Title</h3>
+        <div class="modal-area">
+        <p>Modal Content Here</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal" id="modal-tabbed">
+    <div class="modal-content">
+        <a href="#" class="modal-close" title="Close Modal">X</a>
+        <h3>Modal Title</h3>
+        <div class="modal-area">
+        <p>Tabbed Modal tab content area must be fixed height for tab slide transitions, can be removed and position:absolute removed from .modal-tab and have variable height.</p>
+        <input id="opentab1" type="radio" name="modaltabs" checked="checked"/>
+        <label for="opentab1">Tab 1</label>
+        <input id="opentab2" type="radio" name="modaltabs"/>
+        <label for="opentab2">Tab 2</label>
+        <input id="opentab3" type="radio" name="modaltabs"/>
+        <label for="opentab3">Tab 3</label>
+        <ul class="tab-list">
+            <li class="modal-tab tab1"><p>Tab 1 Content</p></li>
+            <li class="modal-tab tab2"><p>Tab 2 Content</p></li>
+            <li class="modal-tab tab3"><p>Tab 3 Content</p></li>
+        </ul>
+        </div>
+    </div>
+    </div>
+
+
+</body>
+</html>
