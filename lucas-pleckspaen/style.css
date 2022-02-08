@@ -679,7 +679,7 @@ header li a:hover::after {
 }
 
 .info.reveal{
-    min-height: 250px;
+    min-height: 220px;
     border: 1px solid var(--main-color);
     border-radius: 0 0 10px 10px;
 }
